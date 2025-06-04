@@ -23,7 +23,7 @@ This command:
 To subscribe to the "test/topic" and listen for messages:
 
 ```bash
-mosquitto_sub -h localhost -t test/topic
+mosquitto_sub -h localhost -t cafetera/state
 ```
 
 ### Publish a Message
@@ -31,7 +31,7 @@ mosquitto_sub -h localhost -t test/topic
 To publish a message to "test/topic":
 
 ```bash
-mosquitto_pub -h localhost -t test/topic -m "Hola desde mosquitto_pub"
+mosquitto_pub -h localhost -t cafetera/state -m "Hola desde mosquitto_pub"
 ```
 
 ## Notes
