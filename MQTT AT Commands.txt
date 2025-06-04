@@ -1,0 +1,7 @@
+AT+MQTTUSERCFG=0,1,"ESP-01","","",0,0,""
+
+AT+MQTTCONN=0,"192.168.1.49",1883,1
+
+AT+MQTTSUB=0,"cafetera/state",1
+
+AT+MQTTPUB=0,"cafetera/state","ESTADO",1,0
