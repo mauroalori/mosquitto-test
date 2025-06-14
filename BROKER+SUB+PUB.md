@@ -7,7 +7,11 @@ This repository contains configuration and commands for testing MQTT communicati
 To start the Mosquitto broker in a Docker container:
 
 ```bash
-docker run -it --rm -p 1883:1883 -v $(pwd)/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+docker run -it --rm \
+  -p 1883:1883 \
+  -p 9001:9001 \
+  -v $(pwd)/mosquitto.conf:/mosquitto/config/mosquitto.conf \
+  eclipse-mosquitto
 ```
 
 This command:
